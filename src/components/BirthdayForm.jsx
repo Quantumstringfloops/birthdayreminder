@@ -1,8 +1,16 @@
 import React from 'react'
+import { useState } from 'react'
 
-const BirthdayForm = () => {
+const BirthdayForm = ({setBirthday}) => {
+  const [name, setName] = useState("")
+  const [date, setDate] = useState("")
   return (
-    <div>BirthdayForm</div>
+    <div>
+      <form>
+        <input type="text" placeholder='Name: ' className=''/>
+        <input type="date" placeholder='date: ' />
+      </form>
+    </div>
   )
 }
 
