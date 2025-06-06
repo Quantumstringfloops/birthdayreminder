@@ -1,8 +1,15 @@
 import React from 'react'
 
-const BirthdayCard = () => {
+
+const BirthdayCard = ({birthday}) => {
   return (
-    <div>BirthdayCard</div>
+    <div>
+      <ul>
+        {birthday.map((birthday, index) => {
+          <li>{birthday.name} : {birthday.date}</li>
+        })}
+      </ul>
+    </div>
   )
 }
 
