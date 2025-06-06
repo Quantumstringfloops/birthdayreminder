@@ -2,15 +2,16 @@ import React from 'react'
 
 
 const BirthdayCard = ({birthday}) => {
-  return (
+  console.log(birthday)
+  return(
     <div>
       <ul>
         {birthday.map((birthday, index) => {
-          <li>{birthday.name} : {birthday.date}</li>
+          <li key={index}>{birthday.name} : {birthday.date}</li>
         })}
       </ul>
     </div>
-  )
+  );
 }
 
 export default BirthdayCard

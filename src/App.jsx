@@ -6,7 +6,7 @@ import BirthdayCard from './components/BirthdayCard'
 const App = () => {
   const [birthday, setBirthday] = useState([{
     name : 'Neil',
-    date : '2025-11-2005'
+    date : '2025-06-25'
   }])
   return (
     <div>
